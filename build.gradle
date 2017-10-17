@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        maven { url = "http://localhost/nexus/content/groups/public/" }
+        jcenter()
+    }
+}
+
+apply plugin: 'java'
+
+version = "1.0.0"
+group = "org.soraworld"
+
+dependencies {
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+}
